@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prototype</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="website icon" type="png" href="icon.png">
+
+</head>
+
+<body>
+
+    <div class="spa">
+
+            <div class="header">
+
+                <h1>Калькулятор стоимости</h1>
+                <h2>мягкой мебели</h2>
+
+            </div>
+
+            <div class="spa-body">
+
+                 
+
+                    <p class="choice">Выберите тип мебели</p>
+
+                    <div class="sample1-1cbox">
+
+                        <img src="sofa.png" class="icons"> <br>
+                        <label for="i71">Диван</label> 
+                        <input id="r1" type="radio" class="i-7" checked name="rb-1" value = '5000'> 
+
+                    </div>
+
+                    <div class="sample-cbox">
+
+                        <img src="armchair.png" class="icons"> <br>
+                        <label for="i72">Кресло</label>
+                        <input id="r2" type="radio" class="i-7" name="rb-1" value='2500'>
+
+                    </div>
+
+                    <div class="sample-cbox">
+
+                        <img src="chair.png" class="icons"> <br>
+                        <label for="i73">Стул</label>
+                        <input id="r3" type="radio" class="i-7" name="rb-1" value="1500">
+
+                    </div>
+
+                   
+                        
+                    <div class="tcan">
+
+                        <p class="choice">Выберите тип ткани</p>
+
+                        <div class="sample-cbox1">
+
+                            <img src="leather.png" class="icons"> <br>
+                            <label for="i81">Кожа</label>
+                            <input id="r4" type="radio" class="check" checked name="rb-2" value="230">
+
+                        </div>
+
+                        <div class="sample-cbox">
+
+                            <img src="cloth.png" class="icons"> <br>
+                            <label for="i82">Текстиль</label>
+                            <input id="r5" type="radio" class="check" name="rb-2" value="140">
+
+                        </div>
+                    </div>
+
+                    <div class="inputSize">
+                        <p class="choice1">Введите размеры изделия в метрах квадратных, целым числом</p>
+
+                        <div class="stroka">
+                            <p>Длина(х):</p><input id="i-1">
+                        </div>
+
+                        <div class="stroka">
+                            <p>Глубина(z):</p><input id="i-2">
+                        </div>
+
+                        <div class="stroka">
+                            <p>Высота(y):</p><input id="i-3"> 
+                        </div>
+                    </div>
+                    
+
+                <br>
+
+                <button onclick="check()" class="raschet">РАССЧИТАТЬ</button>
+
+                <br>
+
+                <hr class="hr">
+                
+                <div class="size-izdelie">
+
+                    <p id="p-1">Размеры изделия в метрах квадратных (x,y,z)</p> 
+                    <span class="size-x"> * </span> 
+                    <span class="size-y"> * </span> 
+                    <span class="size-z"> * </span>
+                
+                </div>
+                
+                <p class="p-w">Стоимость работы, руб.</p> 
+                <input type="text" id="pww">
+                <p class="p-m">Стоимость материалов, руб.</p>
+                <input type="text" id="pmm">
+                <p class="itog" >Итого</p>
+                <input type="text" class="i" id="rezult">
+
+                <br>
+                <hr class="hr">
+
+                <footer>
+                    <p class="p-2">Данное ПО, написано в рамках лабораторного практикума, курса IT в АИС.</p>
+                    <ul type="disc">
+                        <p class="p-3">Выполнили ст. группы ИВТ-324Б:</p>
+                        <li class="li">Игнатьев А.Д</li>
+                        <li class="li">Зарипов А.Н.</li>
+                        <li class="li">Аминев Ф.Ф.</li>
+                       </ul>
+                       <br>
+                </footer>
+
+            </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
